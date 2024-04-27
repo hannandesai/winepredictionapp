@@ -14,4 +14,4 @@ WORKDIR /winepredictionapp
 # Copy the built JAR file from the previous stage to the container
 COPY --from=build /winepredictionapp/target/winepredictionapp-1.0-SNAPSHOT-jar-with-dependencies.jar .
 # Set the command to run the application
-CMD ["java", "-jar", "winepredictionapp-1.0-SNAPSHOT-jar-with-dependencies.jar"]s
+CMD ["java", "-jar", "winepredictionapp-1.0-SNAPSHOT-jar-with-dependencies.jar"]

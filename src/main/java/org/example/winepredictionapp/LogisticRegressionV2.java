@@ -9,7 +9,7 @@ import org.apache.spark.sql.SparkSession;
 
 public class LogisticRegressionV2 {
     private static final String TESTING_DATASET = "s3a://wineprediction7/TestDataset.csv";
-    private static final String MODEL_PATH = "s3a://wineprediction7/LogisticRegression";
+    private static final String MODEL_PATH = "s3a://wineprediction7/LogisticRegressionModel";
     // private static final String TESTING_DATASET = "wineprediction7/TestDataset.csv";
     // private static final String MODEL_PATH = "wineprediction7/LogisticRegressionModel";
     public void predict(SparkSession spark) {
