@@ -7,8 +7,8 @@ import org.slf4j.LoggerFactory;
 public class App {
     public static final Logger logger = LoggerFactory.getLogger(App.class);
 
-    private static final String ACCESS_KEY_ID = "ASIA5FTY7O2RKB24LIKH";
-    private static final String SECRET_KEY = "P+VLqH9hM2vWTQvOEEzr9xFl6CLVSGFtL8frDY8l";
+    private static final String ACCESS_KEY_ID = "ASIA5FTY7O2RO4DFVKTP";
+    private static final String SECRET_KEY = "iwIW/iPkqHRg7RXYcK3oPUBwGPRWCBydWydvX0Sm";
 
     private static final String MASTER_URI = "local[*]";
 
@@ -16,7 +16,7 @@ public class App {
         SparkSession spark = SparkSession.builder()
                 .appName("Wine Quality Prediction App").master(MASTER_URI)
                 .config("spark.executor.memory", "3g")
-                .config("spark.driver.memory", "3g")
+                .config("spark.driver.memory", "12g")
                 .config("spark.jars.packages", "org.apache.hadoop:hadoop-aws:3.2.2")
                 .getOrCreate();
 
